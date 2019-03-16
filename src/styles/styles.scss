@@ -1,0 +1,28 @@
+@import "./global-params.scss";
+@import "./themes/theme.default.scss";
+
+html,
+body {
+  font-family: $font-family;
+}
+
+body {
+  margin: 2em;
+}
+
+body,
+input[type="text"],
+button {
+  color: #888;
+}
+
+h1 {
+  color: #369;
+  font-size: $font-size-h1;
+}
+
+h2,
+h3 {
+  color: #444;
+  font-weight: lighter;
+}
