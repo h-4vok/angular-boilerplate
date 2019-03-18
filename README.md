@@ -67,6 +67,14 @@ We choose to work on VSCode. Use the latest version possible.
 * Version Lens - Allows to see latest versions of node packages installed
 * Markdown Preview Github Styling - Allows to preview the markdown on the documentation files we write
 
+### Should-have Angular specific VSCode extensions (All optional, but you should consider them)
+
+* Angular Inject Service
+* Angular Language Service
+* Angular Component File Cycler
+* vscode-angular-html
+* Angular Follow Selector
+
 ### Recommended list of VSCode extensions
 
 * Bracket Pair Colorizer - Adds colors to pairs of brackets to ease readability
@@ -77,15 +85,9 @@ We choose to work on VSCode. Use the latest version possible.
 * Quokka.js - Live scratchpad for JavaScript
 * Visual Studio IntelliCode - Preview - Allows for a smarter IntelliSense on TS while developing
 
-### Extensions being tested
+### Recommended list of Angular VSCode extensions
 
 * Angular Console
-* Angular Follow Selector
-* Angular Language Service
-* vscode-angular-html
-* Angular Component File Cycler
-* Angular Inject Service
-* Angular template formatter
 
 ### Recommended VSCode Configuration
 
