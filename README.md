@@ -4,6 +4,8 @@ Stack:
 * Angular 7.3.6
 * NodeJS v11.12.0
 * npm version 6.7.0
+* Kendo ...?
+* Lodash ...?
 
 ## Initial setup
 
@@ -136,9 +138,9 @@ Some settings here depend on installing a few things:
 
 Our instant messaging tool will be slack. We will use the following channels:
 
-* sas-general: General conversation channel for all project related discussions.
-* sas-pr: All PRs must be published here with URL, and tagging all the people that need to review. Conversations about a PR must happen within a thread under the message containing the PR URL.
-* sas-jira: JIRA Cloud plugin enabled channel where specific JIRA Cloud notifications will be shown. These notifications must be configured to be scarce and not overwhelming.
+* sas-fcm-general: General conversation channel for all project related discussions.
+* sas-fcm-pr: All PRs must be published here with URL, and tagging all the people that need to review. Conversations about a PR must happen within a thread under the message containing the PR URL.
+* sas-fcm-jira: JIRA Cloud plugin enabled channel where specific JIRA Cloud notifications will be shown. These notifications must be configured to be scarce and not overwhelming.
 
 ## Naming Standards
 
