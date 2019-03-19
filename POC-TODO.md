@@ -9,8 +9,12 @@ This is a temporary file where we can put TODOs for the project PoC
 * Get github private repos for the project.
 * Decide repositories and repository names.
 * Define git owners.
+    
 * Define branching strategy
+    Feature branching with ticket names
+    ie: feature/fcm-100 bug/fcm-102
 * Define code review process
+    
 * Define documentation process
 * Define what documentation must be built
 
@@ -189,8 +193,9 @@ Define what training developers must undergo
 * Clean Code practices
 * Unit testing UI
 * E2E tests on UI
-* JIRA and project specific workflows
+*   and project specific workflows
 * GIT
 * ECS6 changes
 * Start using closures, not function
 * Start using const and let where required
+x

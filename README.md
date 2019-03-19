@@ -98,7 +98,6 @@ We recommend the following VSCode Configuration but this is not enforced.
 Some settings here depend on installing a few things:
 * "Dracula" is a theme you get from installing the extension "Dracula Official"
 * "Ubuntu Mono" is a font you can download from https://design.ubuntu.com/font/ or https://fonts.google.com/specimen/Ubuntu+Mono
-* "Material Icon Theme" is a recommended extension listed above.
 
 ```JSON
 {
@@ -125,8 +124,6 @@ Some settings here depend on installing a few things:
     "editor.fontSize": 16,
     "workbench.iconTheme": "material-icon-theme",
     "typescript.updateImportsOnFileMove.enabled": "always",
-    "sync.gist": "6f7bd6450bb798dd0113c72b21630c26",
-    "versionlens.github.accessToken": " 41015809eafcd1cb03bc402de1804804e2c4c512",
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
 }
