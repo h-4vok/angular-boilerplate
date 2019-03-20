@@ -1,0 +1,6 @@
+gitoptions:
+  formatter: stylish
+files:
+  include: '**/src/**/*.s+(a|c)ss'
+rules:
+  # Extends

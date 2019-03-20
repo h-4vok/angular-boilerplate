@@ -1,17 +1,21 @@
 {
   "name": "angular-practice",
   "version": "0.0.0",
+  "sasslintConfig": "src/sass-lint.yml",
   "scripts": {
     "ng": "ng",
-    "dev": "ng lint && ng serve",
+    "dev": "ng lint && htmlhint-ng2 src/**/*.html && sass-lint --c src/sass-lint.yml 'src/**/*.scss' --verbose --no-exit && ng serve ",
     "start": "ng serve",
     "build": "ng build --progress --showCircularDependencies --statsJson --verbose",
     "build-prod": "ng build --prod --deleteOutputPath --optimization --progress --showCircularDependencies",
     "test": "ng test",
-    "lint": "ng lint",
+    "lint": "htmlhint-ng2 src/**/*.html && ng lint",
     "e2e": "ng e2e",
     "node-version-set": "nvm install 11.12.0 && nvm use 11.12.0",
     "storybook": "start-storybook"
+  },
+  "bin": {
+    "make-sass-lint-config": "./test/make-sass-lint-config.js"
   },
   "private": true,
   "dependencies": {
@@ -41,6 +45,7 @@
     "@types/node": "~8.9.4",
     "babel-loader": "^8.0.5",
     "codelyzer": "~4.5.0",
+    "htmlhint": "^0.11.0",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.0.0",
@@ -49,6 +54,7 @@
     "karma-jasmine": "~1.1.2",
     "karma-jasmine-html-reporter": "^0.2.2",
     "protractor": "~5.4.0",
+    "sass-lint": "^1.12.1",
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
     "typescript": "~3.2.2"

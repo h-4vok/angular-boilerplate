@@ -48,6 +48,15 @@ Run `npm run build` to build the project. The build artifacts will be stored in 
 
 Run `npm run lint` script to run the linter.
 
+### Run linting SCSS
+In package.json added this line : "sasslintConfig": "./src/sass-lint.yml"
+The rules are in src/sass-lint.yml
+Run `sass-lint --config ./src/sass-lint.yml '**/*.scss' --verbose --no-exit`
+
+### Run linting HTML
+Run `htmlhint-ng2 src/**/*.html`
+View rules `htmlhint-ng2 --list`
+
 ### Running unit tests
 
 Run `npm run test` to execute the unit tests via [Karma](https://karma-runner.github.io).
