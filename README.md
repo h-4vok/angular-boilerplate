@@ -51,7 +51,7 @@ Run `npm run lint` script to run the linter.
 ### Run linting SCSS
 In package.json added this line : "sasslintConfig": "./src/sass-lint.yml"
 The rules are in -> src/sass-lint.yml
-Run `sass-lint --config ./src/sass-lint.yml '**/*.scss' --verbose --no-exit`
+Run `sass-lint -c src/.sass-lint.yml 'src/**/*.scss' -v -q`
 
 ### Run linting HTML
 Run `htmlhint-ng2 src/**/*.html`
