@@ -3,12 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "dev": "ng lint && htmlhint-ng2 src/**/*.html && sass-lint -c src/.sass-lint.yml 'src/**/*.scss' -v -q && ng serve ",
+    "dev": "ng lint && ng serve",
     "start": "ng serve",
     "build": "ng build --progress --showCircularDependencies --statsJson --verbose",
     "build-prod": "ng build --prod --deleteOutputPath --optimization --progress --showCircularDependencies",
     "test": "ng test",
-    "lint": "ng lint && htmlhint-ng2 src/**/*.html && sass-lint -c src/.sass-lint.yml 'src/**/*.scss' -v -q",
+    "lint": "ng lint ",
     "e2e": "ng e2e",
     "node-version-set": "nvm install 11.12.0 && nvm use 11.12.0",
     "storybook": "start-storybook"
