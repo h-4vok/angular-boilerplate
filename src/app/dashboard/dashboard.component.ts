@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import Hero from '../../models/hero';
 import { HeroService } from '../hero.service';
+import { NotificationService } from '../services/notification.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -11,7 +12,7 @@ export class DashboardComponent implements OnInit {
 
   heroes: Hero[] = [];
 
-  constructor(private heroService: HeroService) { }
+  constructor(private heroService: HeroService, private notificationService: NotificationService) { }
 
   ngOnInit() {
     this.getHeroes();
@@ -19,5 +20,8 @@ export class DashboardComponent implements OnInit {
 
   getHeroes() {
     this.heroService.getHeroes().subscribe(data => this.heroes = data.slice(1, 5));
+  }
+  toastTest(hero) {
+    this.notificationService.showSuccess(hero, ' Hero Detail');
   }
 }

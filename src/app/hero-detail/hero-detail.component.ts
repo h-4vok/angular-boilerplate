@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
-
+import { NotificationService } from '../services/notification.service';
 import Hero from '../../models/hero';
 import { HeroService } from '../hero.service';
 
@@ -14,9 +14,10 @@ export class HeroDetailComponent implements OnInit {
 
   hero: Hero;
 
-  goBack = () => this.location.back();
-
-  constructor(private activatedRoute: ActivatedRoute, private heroService: HeroService, private location: Location) { }
+  constructor(
+    private activatedRoute: ActivatedRoute,
+    private heroService: HeroService, private location: Location,
+    private notificationService: NotificationService) { }
 
   ngOnInit() {
     this.getHero();
@@ -27,4 +28,11 @@ export class HeroDetailComponent implements OnInit {
     this.heroService.getHero(id).subscribe(hero => this.hero = hero);
   }
 
+  showToast() {
+    this.notificationService.showWarning('return dashboard', 'Close Hero Detail');
+  }
+  goBack() {
+    this.location.back();
+    this.showToast();
+  }
 }

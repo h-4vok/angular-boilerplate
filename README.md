@@ -70,6 +70,10 @@ Run `npm run e2e` to execute the end-to-end tests via [Protractor](http://www.pr
 
 Run `npm run storybook` to execute the storybook via [StoryBook](https://storybook.js.org/docs/guides/guide-angular/).
 
+## Toast Notifications
+* Configuration `https://github.com/scttcper/ngx-toastr`.
+* Example `https://scttcper.github.io/ngx-toastr/`.
+
 ## IDE
 
 We choose to work on VSCode. Use the latest version possible.
