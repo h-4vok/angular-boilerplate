@@ -1,15 +1,15 @@
 {
   "name": "angular-practice",
   "version": "0.0.0",
-  "sasslintConfig": "src/sass-lint.yml",
+  "sasslintConfig": "src/.sass-lint.yml",
   "scripts": {
     "ng": "ng",
-    "dev": "ng lint && htmlhint-ng2 src/**/*.html && sass-lint --c src/sass-lint.yml 'src/**/*.scss' --verbose --no-exit && ng serve ",
+    "dev": "ng lint && htmlhint-ng2 src/**/*.html && sass-lint -c src/.sass-lint.yml '**/*.scss' -v -q && ng serve ",
     "start": "ng serve",
     "build": "ng build --progress --showCircularDependencies --statsJson --verbose",
     "build-prod": "ng build --prod --deleteOutputPath --optimization --progress --showCircularDependencies",
     "test": "ng test",
-    "lint": "htmlhint-ng2 src/**/*.html && ng lint",
+    "lint": "ng lint && htmlhint-ng2 src/**/*.html && sass-lint -c src/.sass-lint.yml '**/*.scss' -v -q",
     "e2e": "ng e2e",
     "node-version-set": "nvm install 11.12.0 && nvm use 11.12.0",
     "storybook": "start-storybook"
