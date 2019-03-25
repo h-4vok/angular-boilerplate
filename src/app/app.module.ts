@@ -30,8 +30,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     ToastrModule.forRoot({
       timeOut: 3000,
       preventDuplicates: true,
-      toastClass: 'toast-notification',
-      positionClass: 'toast-center-center'
+      positionClass: 'toast-top-center',
+      toastClass: 'ngx-toastr toast-notification',
+      titleClass: 'toast-notification title-toast',
+      messageClass: 'toast-notification message-toast'
     })
   ],
   providers: [],
