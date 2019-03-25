@@ -30,6 +30,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     ToastrModule.forRoot({
       timeOut: 3000,
       preventDuplicates: true,
+      toastClass: 'toast-notification',
+      positionClass: 'toast-center-center'
     })
   ],
   providers: [],
