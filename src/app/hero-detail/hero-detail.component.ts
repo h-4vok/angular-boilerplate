@@ -1,9 +1,9 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { NotificationService } from '../services/notification.service';
 import Hero from '../../models/Hero';
 import { HeroService } from '../hero.service';
+import { HeroDetailService } from '../services/hero-detail.service';
 
 @Component({
   selector: 'app-hero-detail',
@@ -15,7 +15,7 @@ export class HeroDetailComponent implements OnInit {
   hero: Hero;
 
   constructor(
-    private activatedRoute: ActivatedRoute,
+    private heroDetailService: HeroDetailService,
     private heroService: HeroService, private location: Location,
     private notificationService: NotificationService) { }
 
@@ -24,7 +24,7 @@ export class HeroDetailComponent implements OnInit {
   }
 
   getHero() {
-    const id = +this.activatedRoute.snapshot.paramMap.get('id');
+    const id = this.heroDetailService.getId();
     this.heroService.getHero(id).subscribe(hero => this.hero = hero);
   }
 

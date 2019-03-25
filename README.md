@@ -49,14 +49,13 @@ Run `npm run build` to build the project. The build artifacts will be stored in 
 Run `npm run lint` script to run the linter.
 
 ### Run linting SCSS
-In package.json added this line : "sasslintConfig": "./src/sass-lint.yml"
-The rules are in -> src/sass-lint.yml
+The rules are in -> src/.sass-lint.yml
 Run `sass-lint -c src/.sass-lint.yml 'src/**/*.scss' -v -q`
 
 ### Run linting HTML
 Run `htmlhint-ng2 src/**/*.html`
 View rules `htmlhint-ng2 --list`
-Thr rules are in -> src/.htmlhintrc
+The rules are in -> src/.htmlhintrc
 
 ### Running unit tests
 

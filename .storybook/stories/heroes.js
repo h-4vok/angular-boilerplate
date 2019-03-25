@@ -10,14 +10,6 @@ import { HeroDetailComponent } from 'src/app/hero-detail/hero-detail.component';
 import { MessagesComponent } from 'src/app/messages/messages.component';
 import { APP_BASE_HREF } from '@angular/common';
 
-storiesOf('Button Example', module)
-
-  .add('with emoji', () => ({
-    component: Button,
-    props: {
-      text: '😀 😎 👍 💯',
-    },
-  }))
 
 storiesOf('Components Example', module)
   .addDecorator(
