@@ -10,11 +10,10 @@ This is a temporary file where we can put TODOs for the project PoC
 * Decide repositories and repository names.
 * Define git owners.
     
-* Define branching strategy
+* Define branching strategy [DONE]
     Feature branching with ticket names
     ie: feature/fcm-100 bug/fcm-102
-* Define code review process
-    
+* Define code review process [DONE]
 * Define documentation process
 * Define what documentation must be built
 
@@ -192,10 +191,8 @@ Define what training developers must undergo
 * Viewport Resizer
 * Clean Code practices
 * Unit testing UI
-* E2E tests on UI
-*   and project specific workflows
+* E2E tests on UI and project specific workflows
 * GIT
 * ECS6 changes
 * Start using closures, not function
 * Start using const and let where required
-x
