@@ -15,6 +15,7 @@ Stack:
 Run the following npm commands
 * npm run node-version-set
 * npm install -g @angular/cli
+* npm install htmlhint-ng2 -g
 * npm install
 
 Run the app!
