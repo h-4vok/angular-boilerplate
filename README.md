@@ -16,6 +16,7 @@ Run the following npm commands
 * npm run node-version-set
 * npm install -g @angular/cli
 * npm install htmlhint-ng2 -g
+* npm install sass-lint -g
 * npm install
 
 Run the app!
@@ -28,9 +29,13 @@ If you cannot build due to a "SASS" binding issue then run:
 
 ### Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Create a component: `ng generate component components/component-name`
+Create a service: `ng generate service services/service-name`
+Create a screen: `ng generate component screens/screen-name`
 
-For example if you wish to generate a new component place yourself at the project root folder and run `ng generate component component-name` where component-name is the name of your component (duh).
+You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+For example if you wish to generate a new component place yourself at the project root folder and run `ng generate component components/component-name` where component-name is the name of your component (duh).
 
 ## NPM commands
 
@@ -87,6 +92,8 @@ We choose to work on VSCode. Use the latest version possible.
 * SCSS Formatter - Formats SCSS according to EditorConfig configuration
 * Version Lens - Allows to see latest versions of node packages installed
 * Markdown Preview Github Styling - Allows to preview the markdown on the documentation files we write
+* Sass Lint - Runs sass-lint into the editor as you type.
+* HTMLHint - Runs htmlhint into the editor as you type.
 
 ### Should-have Angular specific VSCode extensions (All optional, but you should consider them)
 
