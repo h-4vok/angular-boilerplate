@@ -15,8 +15,6 @@ export class NotificationService {
   }
 
   showWarning(message, title) {
-    this.toastrService.warning(message, title, {
-      positionClass: 'toast-bottom-right'
-    });
+    this.toastrService.warning(message, title);
   }
 }
