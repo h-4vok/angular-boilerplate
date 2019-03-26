@@ -4,6 +4,7 @@ import { NotificationService } from '../services/notification.service';
 import Hero from '../../models/Hero';
 import { HeroService } from '../hero.service';
 import { HeroDetailService } from '../services/hero-detail.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-hero-detail',
@@ -15,16 +16,19 @@ export class HeroDetailComponent implements OnInit {
   hero: Hero;
 
   constructor(
-    private heroDetailService: HeroDetailService,
+    private route: ActivatedRoute, private heroDetailService: HeroDetailService,
     private heroService: HeroService, private location: Location,
-    private notificationService: NotificationService) { }
+    private notificationService: NotificationService) {
+
+  }
 
   ngOnInit() {
     this.getHero();
   }
 
   getHero() {
-    const id = this.heroDetailService.getId();
+    const id = this.heroDetailService.getId(this.route);
+
     this.heroService.getHero(id).subscribe(hero => this.hero = hero);
   }
 

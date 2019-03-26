@@ -12,6 +12,7 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { MessagesComponent } from './messages/messages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { HeroDetailService } from './services/hero-detail.service';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
       preventDuplicates: true,
     })
   ],
-  providers: [],
+  providers: [HeroDetailService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

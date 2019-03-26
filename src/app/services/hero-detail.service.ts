@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 
 
 @Injectable({
@@ -8,19 +7,22 @@ import { ActivatedRoute } from '@angular/router';
 export class HeroDetailService {
   id: number;
 
-  constructor(private activatedRoute: ActivatedRoute) {
-    this.activatedRoute.paramMap.subscribe(
-      // tslint:disable-next-line:ter-arrow-parens
-      params => {
-        this.id = +params.get('id');
-      }
-    );
+  constructor() { }
 
-  }
+  getId(route): number {
 
-  getId(): number {
+    this.id = +route.snapshot.paramMap.get('id');
+
     return this.id;
   }
+
+  /*
+    getId(): number {
+      console.log(this.activatedRoute.snapshot.params);
+      this.id = +this.activatedRoute.snapshot.params['id'];
+      return this.id;
+    }
+  */
 
 
 }
