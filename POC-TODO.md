@@ -10,11 +10,10 @@ This is a temporary file where we can put TODOs for the project PoC
 * Decide repositories and repository names.
 * Define git owners.
     
-* Define branching strategy
+* Define branching strategy [DONE]
     Feature branching with ticket names
     ie: feature/fcm-100 bug/fcm-102
-* Define code review process
-    
+* Define code review process [DONE]
 * Define documentation process
 * Define what documentation must be built
 
@@ -22,14 +21,14 @@ This is a temporary file where we can put TODOs for the project PoC
 
 * Create a PoC project that can be used to start our development (this project).
 
-#### Global Notification Support:
+#### Global Notification Support [DONE]:
 * Install https://github.com/kyashan/toastify (Live example at http://kyashan.github.io/toastify/)
 * Configure an abstraction layer
 * Define styling for notifications
 * Test notification in several viewports
 * Possibly a root level service in Angular 7?
 
-#### API connectivity:
+#### API connectivity [DONE - We will just use HttpClient and mock it on unit testing]:
 * How will we connect to the API? Setup Superagent.
 * Use Teleperformance API for testing (already has authentication and other intrisicancies).
 * Develop an abstraction layer on top of Superagent.
@@ -39,43 +38,43 @@ This is a temporary file where we can put TODOs for the project PoC
 * Downloading files with Superagent either is not possible or does not work properly.
 * We need a standard way to download files from a server/api.
 
-#### HTTP-Status library (Done)
+#### HTTP-Status library [DONE]
 * Useful for API connectivity layer
 
-#### Storybook
+#### Storybook [IN PROGRESS]
 * This project will be UI intensive and finite components must be identified and created.
 * Setup Storybook on this project.
 * Setup Storybook viewports.
 * Train developers on Storybook.
 * Define how Storybook fits into the development pipeline of new components.
 
-#### Docker
+#### Docker [DONE - Discarded for now]
 * Will we need Docker?
 * Need developers to be trained on docker
 * Create docker files.
 
-#### Cross-Env
+#### Cross-Env [PENDING - Angular has it´s own solution, but how does it work?]
 * Will we need cross-env on this project? Seems Angular comes with its own solution so this needs to be revised.
 
-#### JEST
+#### JEST [PENDING]
 * Jest is already setup, but we must configure precisely how we want code coverage.
 * Configure how we want to run tests.
 * We should enforce unit testing on UI.
 
-#### Redux
+#### Redux [DONE - Redux is not needed at all]
 * Define our Redux strategy. Where will we use it, how will we use it?
 * It will also depend on the backend. Since it cannot be modified except when adding new endpoints.
 * Will we use SAGAs? Is it necessaray?
 * Will we use reselect?
 
-#### SCSS
+#### SCSS [DONE]
 * Define SCSS practices and standards
 * Define how styles should be structured
 * Setup mixins. Split by problem domain.
 * Setup theme variables
 * Setup global variables
 
-#### Viewport Resizer
+#### Viewport Resizer [PENDING]
 * Setup Viewport Resizer breakpoints and configuration. Add to Readme.md.
 * Train developers on usage of Viewport Resizer.
 
@@ -192,10 +191,8 @@ Define what training developers must undergo
 * Viewport Resizer
 * Clean Code practices
 * Unit testing UI
-* E2E tests on UI
-*   and project specific workflows
+* E2E tests on UI and project specific workflows
 * GIT
 * ECS6 changes
 * Start using closures, not function
 * Start using const and let where required
-x
