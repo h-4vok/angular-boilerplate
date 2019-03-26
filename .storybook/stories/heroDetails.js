@@ -9,12 +9,6 @@ import { DashboardComponent } from 'src/app/dashboard/dashboard.component';
 import { MessagesComponent } from 'src/app/messages/messages.component';
 import { APP_BASE_HREF } from '@angular/common';
 
-const hero2 = {
-  id: 1,
-  name: 'Mr.Nice'
-};
-
-
 storiesOf('Components Example', module)
   .addDecorator(
     moduleMetadata({
@@ -33,13 +27,7 @@ storiesOf('Components Example', module)
   )
   .add('hero-detail', () => ({
     component: HeroDetailComponent,
-    path: 'detail/2',
     props: {
-      'hero': hero2,
       'id': 2,
-      'name': 'test'
-    },
-    data: {
-      hero: [{ id: "2", name: "Canada" }],
     },
   }));

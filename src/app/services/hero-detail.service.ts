@@ -10,19 +10,10 @@ export class HeroDetailService {
   constructor() { }
 
   getId(route): number {
-
     this.id = +route.snapshot.paramMap.get('id');
-
+    if (this.id === 0) {
+      this.id = 2;
+    }
     return this.id;
   }
-
-  /*
-    getId(): number {
-      console.log(this.activatedRoute.snapshot.params);
-      this.id = +this.activatedRoute.snapshot.params['id'];
-      return this.id;
-    }
-  */
-
-
 }
