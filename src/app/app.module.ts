@@ -9,10 +9,12 @@ import { FileSaverModule } from 'ngx-filesaver';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeroesComponent } from './heroes/heroes.component';
-import { HeroDetailComponent } from './hero-detail/hero-detail.component';
-import { MessagesComponent } from './messages/messages.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+
+import { MessagesComponent } from './components/messages/messages.component';
+
+import { HeroesComponent } from './screens/heroes/heroes.component';
+import { HeroDetailComponent } from './screens/hero-detail/hero-detail.component';
+import { DashboardComponent } from './screens/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +34,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     ToastrModule.forRoot({
       timeOut: 3000,
       preventDuplicates: true,
+      positionClass: 'toast-top-center',
+      toastClass: 'ngx-toastr toast-notification',
+      titleClass: 'toast-notification title-toast',
+      messageClass: 'toast-notification message-toast'
     })
   ],
   providers: [],
