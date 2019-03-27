@@ -7,9 +7,9 @@ import { HeroesComponent } from 'src/app/screens/heroes/heroes.component';
 import { HeroDetailComponent } from 'src/app/screens/hero-detail/hero-detail.component';
 import { DashboardComponent } from 'src/app/screens/dashboard/dashboard.component';
 import { APP_BASE_HREF } from '@angular/common';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { addonAPI } from '@storybook/addons';
 
-const id = { 'id': '2' };
+const id = { 'id': 2 };
 
 storiesOf('Components Example', module)
   .addDecorator(
@@ -26,9 +26,8 @@ storiesOf('Components Example', module)
       providers: [{ provide: APP_BASE_HREF, useValue: '../../src' }]
     })
   )
+  .addParameters(id)
+
   .add('hero-detail', () => ({
-    component: HeroDetailComponent,
-    props: {
-      id
-    }
+    component: HeroDetailComponent
   }));
