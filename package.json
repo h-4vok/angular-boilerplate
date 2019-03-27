@@ -5,7 +5,7 @@
     "ng": "ng",
     "sasslint": "sass-lint -c src/.sass-lint.yml 'src/**/*.scss' -v -q",
     "htmlhint": "htmlhint-ng2 src/**/*.html",
-    "dev": "npm run htmlhint  && lint && ng serve && npm run sasslint",
+    "dev": "npm run htmlhint && npm run sasslint && npm run lint && ng serve ",
     "start": "ng serve",
     "build": "ng build --progress --showCircularDependencies --statsJson --verbose",
     "build-prod": "ng build --prod --deleteOutputPath --optimization --progress --showCircularDependencies",
