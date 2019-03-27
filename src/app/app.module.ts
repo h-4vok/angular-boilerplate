@@ -8,11 +8,12 @@ import { ToastrModule } from 'ngx-toastr';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeroesComponent } from './heroes/heroes.component';
-import { HeroDetailComponent } from './hero-detail/hero-detail.component';
-import { MessagesComponent } from './messages/messages.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { HeroDetailService } from './services/hero-detail.service';
+
+import { MessagesComponent } from './components/messages/messages.component';
+
+import { HeroesComponent } from './screens/heroes/heroes.component';
+import { HeroDetailComponent } from './screens/hero-detail/hero-detail.component';
+import { DashboardComponent } from './screens/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,10 @@ import { HeroDetailService } from './services/hero-detail.service';
     ToastrModule.forRoot({
       timeOut: 3000,
       preventDuplicates: true,
+      positionClass: 'toast-top-center',
+      toastClass: 'ngx-toastr toast-notification',
+      titleClass: 'toast-notification title-toast',
+      messageClass: 'toast-notification message-toast'
     })
   ],
   providers: [HeroDetailService],

@@ -1,5 +1,9 @@
-@import "./global-params.scss";
-@import "./themes/theme.default.scss";
+@import "./global-params";
+@import "./themes/theme.default";
+
+$placeholder-color: #888;
+$title-color: #369;
+$subtitle-color: #444;
 
 html,
 body {
@@ -11,18 +15,23 @@ body {
 }
 
 body,
-input[type="text"],
 button {
-  color: #888;
+  color: $placeholder-color;
+}
+
+input {
+  &[type="text"] {
+    color: $placeholder-color;
+  }
 }
 
 h1 {
-  color: #369;
+  color: $title-color;
   font-size: $font-size-h1;
 }
 
 h2,
 h3 {
-  color: #444;
+  color: $subtitle-color;
   font-weight: lighter;
 }
