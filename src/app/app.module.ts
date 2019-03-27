@@ -3,17 +3,14 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-
 import { ToastrModule } from 'ngx-toastr';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
 import { MessagesComponent } from './components/messages/messages.component';
-
 import { HeroesComponent } from './screens/heroes/heroes.component';
 import { HeroDetailComponent } from './screens/hero-detail/hero-detail.component';
 import { DashboardComponent } from './screens/dashboard/dashboard.component';
+import { HeroDetailService } from './services/hero-detail.service';
 
 @NgModule({
   declarations: [
