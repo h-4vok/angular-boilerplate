@@ -10,7 +10,6 @@ import { MessagesComponent } from './components/messages/messages.component';
 import { HeroesComponent } from './screens/heroes/heroes.component';
 import { HeroDetailComponent } from './screens/hero-detail/hero-detail.component';
 import { DashboardComponent } from './screens/dashboard/dashboard.component';
-import { HeroDetailService } from './services/hero-detail.service';
 
 @NgModule({
   declarations: [
@@ -35,7 +34,6 @@ import { HeroDetailService } from './services/hero-detail.service';
       messageClass: 'toast-notification message-toast'
     })
   ],
-  providers: [HeroDetailService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

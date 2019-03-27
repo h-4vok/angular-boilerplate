@@ -28,6 +28,3 @@ storiesOf('Components Example', module)
   .add('Dashboard', () => ({
     component: DashboardComponent
   }))
-  .add('heroes', () => ({
-    component: HeroesComponent
-  }))

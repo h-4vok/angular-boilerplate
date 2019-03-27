@@ -8,6 +8,8 @@ import { HeroDetailComponent } from 'src/app/screens/hero-detail/hero-detail.com
 import { DashboardComponent } from 'src/app/screens/dashboard/dashboard.component';
 import { APP_BASE_HREF } from '@angular/common';
 
+const id = number('id', 2);
+
 storiesOf('Components Example', module)
   .addDecorator(
     moduleMetadata({
@@ -24,8 +26,5 @@ storiesOf('Components Example', module)
     })
   )
   .add('hero-detail', () => ({
-    component: HeroDetailComponent,
-    props: {
-      'id': 2,
-    },
+    component: HeroDetailComponent
   }));
