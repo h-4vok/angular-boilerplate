@@ -7,6 +7,8 @@ import { AppComponent } from 'src/app/app.component';
 import { HeroesComponent } from 'src/app/screens/heroes/heroes.component';
 import { HeroDetailComponent } from 'src/app/screens/hero-detail/hero-detail.component';
 import { APP_BASE_HREF } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
+import { FileSaverModule } from 'ngx-filesaver';
 
 storiesOf('Components Example', module)
   .addDecorator(
@@ -18,7 +20,7 @@ storiesOf('Components Example', module)
         DashboardComponent
       ],
 
-      imports: [AppRoutingModule, ToastrModule.forRoot({
+      imports: [HttpClientModule, FileSaverModule, AppRoutingModule, ToastrModule.forRoot({
         timeOut: 3000,
         preventDuplicates: true,
       })],
