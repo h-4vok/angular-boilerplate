@@ -23,11 +23,11 @@ storiesOf('Components Example', module)
         timeOut: 3000,
         preventDuplicates: true,
       })],
-      providers: [{ provide: APP_BASE_HREF, useValue: '../../src' }]
+      providers: [{ provide: APP_BASE_HREF, useValue: '2' }]
     })
   )
   .addParameters(id)
 
   .add('hero-detail', () => ({
     component: HeroDetailComponent
-  }));
+  }), id);
