@@ -44,7 +44,7 @@ For example if you wish to generate a new component place yourself at the projec
 
 ### Development server
 
-Run `npm run dev` for a dev server. Linting will run first and if no errors are found, then the dev server will start. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `npm run dev` for a dev server. Linting will run first and if no errors are found, then the dev server will start. Navigate to `http://localhost:3000/`. The app will automatically reload if you change any of the source files.
 
 ### Build
 
@@ -62,7 +62,7 @@ Run `sass-lint -c src/.sass-lint.yml -v -q`
 ### Run linting HTML
 Run `htmlhint-ng2 src/**/*.html`
 View rules `htmlhint-ng2 --list`
-Thr rules are in -> src/.htmlhintrc
+The rules are in -> src/.htmlhintrc
 
 ### Running unit tests
 

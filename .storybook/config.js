@@ -1,7 +1,8 @@
 import { configure } from '@storybook/angular';
 
+const req = require.context('.storybook/stories/', true, /.js$/);
 function loadStories() {
-  require('.storybook/stories/index.js');
+  req.keys().forEach(filename => req(filename));
   // You can require as many stories as you need.
 }
 
