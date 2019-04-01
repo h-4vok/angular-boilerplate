@@ -5,6 +5,13 @@ $placeholder-color: #888;
 $title-color: #369;
 $subtitle-color: #444;
 
+$loader-background-color: rgba(40, 126, 171, 0.22);
+
+.loader-class {
+  background-color: $loader-background-color;
+  pointer-events: none;
+}
+
 html,
 body {
   font-family: $font-family;

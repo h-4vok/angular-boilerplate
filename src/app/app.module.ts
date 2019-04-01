@@ -12,6 +12,7 @@ import { MessagesComponent } from './components/messages/messages.component';
 import { HeroesComponent } from './screens/heroes/heroes.component';
 import { HeroDetailComponent } from './screens/hero-detail/hero-detail.component';
 import { DashboardComponent } from './screens/dashboard/dashboard.component';
+import { SpinnerComponent } from './components/spinner/spinner.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { DashboardComponent } from './screens/dashboard/dashboard.component';
     HeroesComponent,
     HeroDetailComponent,
     MessagesComponent,
-    DashboardComponent
+    DashboardComponent,
+    SpinnerComponent
   ],
   imports: [
     BrowserModule,

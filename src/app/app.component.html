@@ -1,7 +1,16 @@
+<button
+    class="button-spinner"
+    (click)="loader()"
+>
+    Spinner Example
+</button>
 <h1>{{ title }}</h1>
 <nav>
     <a routerLink="/dashboard">Dashboard</a>
     &nbsp;
     <a routerLink="/heroes">Heroes</a>
 </nav>
-<router-outlet></router-outlet>
+<app-spinner [showSpinner]="showSpinner"></app-spinner>
+<div *ngIf="!showSpinner">
+    <router-outlet></router-outlet>
+</div>
