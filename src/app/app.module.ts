@@ -13,7 +13,6 @@ import { MessagesComponent } from './components/messages/messages.component';
 import { HeroesComponent } from './screens/heroes/heroes.component';
 import { HeroDetailComponent } from './screens/hero-detail/hero-detail.component';
 import { DashboardComponent } from './screens/dashboard/dashboard.component';
-import { InputsModule } from '@progress/kendo-angular-inputs';
 import { Fcm109Component } from './screens/fcm109/fcm109.component';
 
 
@@ -41,7 +40,6 @@ import { Fcm109Component } from './screens/fcm109/fcm109.component';
       titleClass: 'toast-notification title-toast',
       messageClass: 'toast-notification message-toast'
     }),
-    InputsModule,
     ReactiveFormsModule
   ],
   bootstrap: [AppComponent]
