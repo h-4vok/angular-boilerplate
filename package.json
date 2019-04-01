@@ -4,22 +4,17 @@
   "scripts": {
     "ng": "ng",
     "node-version-set": "nvm install 11.12.0 && nvm use 11.12.0",
-
     "build": "ng build --progress --showCircularDependencies --statsJson --verbose",
     "build-prod": "ng build --prod --deleteOutputPath --optimization --progress --showCircularDependencies",
-
     "sasslint": "sass-lint -c src/.sass-lint.yml 'src/**/*.scss' -v -q",
     "htmlhint": "htmlhint-ng2 src/**/*.html",
     "lint": "ng lint ",
     "all-lints": "npm run htmlhint && npm run sasslint && npm run lint",
-
     "test": "ng test",
     "e2e": "ng e2e",
-
     "dev": "npm run all-lints && npm run start",
     "start": "ng serve",
     "storybook": "start-storybook",
-
     "all-checks": "npm run all-lints && npm run build"
   },
   "private": true,

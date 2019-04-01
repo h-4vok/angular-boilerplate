@@ -1,0 +1,32 @@
+$input-eborder-color: red;
+$error-message-color: #900;
+$input-gborder-color: #42a948;
+$font-color: white;
+
+ng-valid.ng-touched {
+  border: 5px solid $input-gborder-color;
+}
+
+ng-invalid.ng-touched {
+  border: 5px solid $input-eborder-color;
+}
+input.ng-invalid.ng-touched {
+  border: 1px solid $input-eborder-color;
+}
+
+.form-group {
+  padding: 5px;
+  .error {
+    width: 100%;
+    font-size: 80%;
+    color: $font-color;
+    background-color: $error-message-color;
+    border-radius: 0 0 5px 5px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    &.active {
+      padding: 0.3em;
+      margin: 0.3em;
+    }
+  }
+}
