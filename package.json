@@ -4,22 +4,17 @@
   "scripts": {
     "ng": "ng",
     "node-version-set": "nvm install 11.12.0 && nvm use 11.12.0",
-
     "build": "ng build --progress --showCircularDependencies --statsJson --verbose",
     "build-prod": "ng build --prod --deleteOutputPath --optimization --progress --showCircularDependencies",
-
     "sasslint": "sass-lint -c src/.sass-lint.yml 'src/**/*.scss' -v -q",
     "htmlhint": "htmlhint-ng2 src/**/*.html",
     "lint": "ng lint ",
     "all-lints": "npm run htmlhint && npm run sasslint && npm run lint",
-
     "test": "ng test",
     "e2e": "ng e2e",
-
     "dev": "npm run all-lints && npm run start",
     "start": "ng serve",
     "storybook": "start-storybook",
-
     "all-checks": "npm run all-lints && npm run build"
   },
   "private": true,
@@ -32,13 +27,18 @@
     "@angular/platform-browser": "~7.2.0",
     "@angular/platform-browser-dynamic": "~7.2.0",
     "@angular/router": "~7.2.0",
+    "@progress/kendo-angular-inputs": "^4.2.1",
     "core-js": "^2.5.4",
     "file-saver": "^2.0.1",
     "ngx-filesaver": "^2.2.1",
     "ngx-toastr": "^10.0.2",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
-    "zone.js": "~0.8.26"
+    "zone.js": "~0.8.26",
+    "@progress/kendo-angular-intl": "^1.4.0",
+    "@progress/kendo-angular-l10n": "^1.1.0",
+    "rxjs-compat": "^6.0.0",
+    "@progress/kendo-theme-default": "latest"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.13.0",

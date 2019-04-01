@@ -1,0 +1,54 @@
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h2>FCM 109</h2>
+                <form
+                    [formGroup]="registerForm"
+                    (ngSubmit)="onSubmit()"
+                >
+                    <div class="form-group">
+                        <label>First Name</label>
+                        <input
+                            type="text"
+                            formControlName="firstName"
+                            class="form-control"
+                            [ngClass]="{ 'is-invalid': (submitted || user.firstName.touched) && user.firstName.errors }"
+                        >
+
+                        <span
+                            *ngIf="(submitted || !!user.firstName.touched) && !!user.firstName.errors"
+                            class="error active"
+                            aria-live="polite"
+                        >
+                            First Name is required
+                        </span>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label>Last Name</label>
+                        <input
+                            type="text"
+                            formControlName="lastName"
+                            class="form-control"
+                            [ngClass]="{ 'is-invalid':(submitted || user.lastName.touched) && user.lastName.errors }"
+                        >
+                        <span
+                            *ngIf="(submitted || !!user.lastName.touched) && !!user.lastName.errors"
+                            class="error active"
+                            aria-live="polite"
+                        >
+                            Last Name is required
+                        </span>
+
+                    </div>
+
+                    <div class="form-group">
+                        <button class="btn btn-primary">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
