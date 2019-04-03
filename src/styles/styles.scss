@@ -8,8 +8,14 @@ $subtitle-color: #444;
 $loader-background-color: rgba(40, 126, 171, 0.22);
 
 .loader-class {
-  background-color: $loader-background-color;
   pointer-events: none;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  opacity: 0.7;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
 }
 
 html,

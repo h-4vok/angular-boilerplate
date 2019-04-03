@@ -15,9 +15,9 @@ export class SpinnerComponent implements OnInit, OnChanges {
   }
   ngOnChanges(changes: SimpleChanges) {
     if (!this.showSpinner) {
-      this.renderer2.removeClass(document.body, 'loader-class');
+      this.renderer2.removeClass(document.getElementById('homeDiv'), 'loader-class');
     } else if (this.showSpinner) {
-      this.renderer2.addClass(document.body, 'loader-class');
+      this.renderer2.addClass(document.getElementById('homeDiv'), 'loader-class');
     }
   }
 }
