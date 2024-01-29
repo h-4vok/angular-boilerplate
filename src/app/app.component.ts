@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'SAS PoC Project - Boilerplate';
+  showSpinner = false;
+  loader() {
+    this.showSpinner = !this.showSpinner;
+  }
 }
